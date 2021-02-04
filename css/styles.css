@@ -1,6 +1,12 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
 .page {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .logo {
@@ -9,15 +15,42 @@
 
 /* site nav and connection link */
 
-.site-nav.link {
-  color: #212121;
+.site-nav .link {
+  color: var(--title-text-color);
 }
 
-.site-nav.link:hover,
-.site-nav.link:focus {
-  color: #2196f3;
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
+
+.site-nav .link.current {
+  color: red;
+}
+
+/* hero */
+
+.hero-title {
+  color: #ffffff;
+}
+
+/* section */
 
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
+}
+
+/* feature */
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* сфера деятельности */
+
+/* button */
+
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
