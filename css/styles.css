@@ -7,10 +7,12 @@
 .page {
   background-color: #ffffff;
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
 }
 
 .logo {
   color: #000000;
+  font-family: Raleway, cursive;
 }
 
 /* site nav and connection link */
