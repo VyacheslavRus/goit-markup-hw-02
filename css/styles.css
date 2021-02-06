@@ -8,21 +8,42 @@
   background-color: #ffffff;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  letter-spacing: 3%;
 }
 
 .logo {
   color: #000000;
-  font-family: Raleway, cursive;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-text {
+  color: var(--accent-color);
 }
 
 /* site nav and connection link */
 
-.site-nav .link {
+.site-nav .link,
+.connection-link .link {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.connection-link .link:hover,
+.connection-link .link:focus {
   color: var(--accent-color);
 }
 
@@ -31,28 +52,103 @@
 }
 
 /* hero */
-
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
   color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 6%;
+  text-transform: uppercase;
 }
-
-/* section */
-
-.section-title {
-  color: var(--title-text-color);
-}
-
-/* feature */
-
-.feature-list .title {
-  color: var(--title-text-color);
-}
-
-/* сфера деятельности */
 
 /* button */
 
 .button {
   color: #ffffff;
   background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 6%;
+}
+
+/* feature */
+
+.feature-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.feature-list .feature-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* section */
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* сфера деятельности */
+
+/* Команда */
+
+.team-subtitle {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-subtitle-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+}
+
+/* Футер */
+footer {
+  background-color: #2f303a;
+}
+.address-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7px;
+  text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
 }
