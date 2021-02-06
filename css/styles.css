@@ -176,7 +176,7 @@ footer {
 
 /* Фильтр */
 
-. .button-text {
+.button-text {
   color: var(--title-text-color);
 
   font-weight: 500;
