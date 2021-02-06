@@ -2,10 +2,11 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --background-color: #ffffff;
 }
 
 .page {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 3%;
@@ -26,10 +27,18 @@
 
 /* site nav and connection link */
 
-.site-nav .link,
-.connection-link .link {
+.site-nav .link {
   color: var(--title-text-color);
 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+  text-decoration: none;
+}
+
+.connection-link .link {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -48,7 +57,7 @@
 }
 
 .site-nav .link.current {
-  color: red;
+  color: var(--accent-color);
 }
 
 /* hero */
@@ -135,6 +144,16 @@
 footer {
   background-color: #2f303a;
 }
+
+.logo-part {
+  color: #ffffff;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
 .address-text {
   font-weight: 400;
   font-size: 14px;
@@ -157,7 +176,7 @@ footer {
 
 /* Фильтр */
 
-.button-text {
+. .button-text {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -186,6 +205,7 @@ footer {
 }
 
 .projects-text {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
